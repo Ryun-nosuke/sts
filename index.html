@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>slay the spire</title>
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+  <!--<h1>Slay The Spire デッキ作成ツール</h1>-->
+  <table>
+    <tr>
+      <td>初期デッキ選択</td>
+      <td>
+        <select>
+          <option value="ar" >アイアンクラッド</option>
+          <option value="si" >サイレント</option>
+          <option value="de" >ディフェクト</option>
+          <option value="wa" >ウォッチャー</option>
+        </select>
+        <button id="base_char_select_button">決定</button>
+      </td>
+    </tr>
+    <tr>
+      <td>追加カード</td>
+      <td><input id="add_card_input">
+        <button id="add_card_button">決定</button>
+      </td>
+    </tr>
+  </table>
+  <table id="card_list">
+    <tr id="title">
+      <th id="card_name">カード名  <button id="card_all_count">全部で何枚？</button>
+      </th>
+      <th id="maisu">枚数</th>
+      <th>アップグレード</th>
+      <th>削除</th>
+    </tr>
+  </table>
+  <script src="main.js"></script>
+</body>
+</html>
